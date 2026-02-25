@@ -1,14 +1,12 @@
-# Pedir datos
-nom = input("Ingrese su nombre: ")
+# Solicitar datos
+nombre = input("Ingrese su nombre: ")
 apellido = input("Ingrese su apellido: ")
+edad_mayor = int(input("Ingrese la edad del hermano mayor: "))
+edad_menor = int(input("Ingrese la edad del hermano menor: "))
 
-edad_mayor = int(input("Edad del hermano mayor: "))
-edad_menor = int(input("Edad del hermano menor: "))
-
-# Calcular diferencia
+# Calcular diferencia de edades
 diferencia = edad_mayor - edad_menor
 
-# Mostrar resultado (interpolacion)
-print(f"Nombre completo: {nombre} {apellido}")
-print(f"La diferencia de edad entre los hermanos es: {diferencia} años")
-
+# Mostrar resultado (concatenación e interpolación)
+print("\nNombre completo:", nombre + " " + apellido)
+print(f"Diferencia de edad entre hermanos: {diferencia} años")
